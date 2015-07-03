@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /*
- * Program for testing out reading arguments from the command line / passed in at startup
- * argc: the number of arguments, it is a non-negetive number
+ * Program for testing out reading arguments from the command line / passed in at start
+ * argc: the number of arguments, it is a non-negative number
  * if argc > 1 then argv[1] to argv[argc-1] are the arguments passed to the program
  * argv[0] is the name of the program
 */
