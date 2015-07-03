@@ -32,6 +32,7 @@ int main(void)
 
 	printf("Waiting for threads to finish.\n");
 
+
 	pthread_join(thread1, NULL);
 	pthread_join(thread2, NULL);
 	
