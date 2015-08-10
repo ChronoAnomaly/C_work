@@ -21,7 +21,7 @@ int main(void)
 	int thread_args[NUM_THREADS];
 	int result_code, index;
 
-	// create all theads one by one
+	/* create all theads one by one */
 	for (index = 0; index < NUM_THREADS; ++index) {
 		thread_args[index] = index;
 		printf("In main: creating threads %d\n", index);
@@ -30,9 +30,9 @@ int main(void)
 		assert(0 == result_code);
 	}
 
-	// wait for each thread to complete
+	/* wait for each thread to complete */
 	for (index = 0; index < NUM_THREADS; ++index) {
-		// block until thread 'index' completes
+		/* block until thread 'index' completes */
 		result_code = pthread_join(threads[index], NULL);
 		printf("In main: thread %d has completed\n", index);
 		assert(0 == result_code);
