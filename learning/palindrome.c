@@ -23,15 +23,15 @@ main()
 }
 
 
-int palindrome(char s[])
+int palindrome(char* ptr)
 {
 	int i, size, valid;
 	valid = TRUE;
-	size = strlen(s);
+	size = strlen(ptr);
 
 	for(i = 0; i < size/2 && valid; i++){
 		
-		if(s[i] == s[size - 1 - i]){
+		if(ptr[i] == ptr[size - 1 - i]){
 			valid = TRUE;
 		} else {
 			valid = FALSE;
