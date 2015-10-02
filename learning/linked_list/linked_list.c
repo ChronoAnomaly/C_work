@@ -6,6 +6,12 @@
 
 void next_node(struct Node** ptr);
 
+struct Node
+{
+	int data;
+	struct Node* next;
+};
+
 int main()
 {
 	struct Node* head;
